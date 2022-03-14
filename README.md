@@ -1,56 +1,37 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Description the project.
 
-> Description the project.
-
+>Module 1 Capstone Capstone.
+ -  Topic: Running a passion collecting kilometers
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Frameworks: Bootstrap
+- Technologies used: HTML, CSS, Javascript
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
-
+[Running Capstone](https://neckerfree.github.io/Capstone/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
+- Clone the repository running this command in Git:
+  git clone https://github.com/NeckerFree/PortfolioV2
 
 ### Prerequisites
-
-### Setup
-
-### Install
+- Git 
 
 ### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+- Change to the Capstone folder an open in your browser the Index.html file
+  
 ## Authors
+👤 **Elio Cortés**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@NeckerFree](https://github.com/NeckerFree)
+- Twitter: [@ElioCortesM](https://twitter.com/ElioCortesM)
+- LinkedIn: [elionelsoncortes](https://www.linkedin.com/in/elionelsoncortes/)
 
 ## 🤝 Contributing
 
@@ -61,12 +42,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
