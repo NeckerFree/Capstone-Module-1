@@ -1,14 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
+/* CSS Variables */
+element {
+  --cap-dark-color: #272a31;
+  --cap-orange-color: #ec5242;
+  --cap-gray-color: #d3d3d3;
+  --blur: 10px;
+  
+} 
+/* General use*/
+
+.icon-bar {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
 /* Mobile version */
 body {
-  margin: 0;
+  margin: 0 auto;
+  /* background-color: var(--cap-dark-color); */
+  background-color: black;
+}
+main{
+  max-width: 1200px;
+  padding: 10px;
 }
 
+h1 {
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('../images/background.jpg');
+	color: transparent;
+  font-size: large;
+}
 /* Desktop version */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     margin: 0;
   }
 }
+/* .container{
+  margin: 10px auto; height: 200px;
+} */
