@@ -4,54 +4,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
+ 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://www.cdnfonts.com/cocogoose.font" rel="canonical">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
-  <title>Running is Passion</title>
+    <!-- <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+            <link rel="stylesheet" href="./css/styles.css">
+        <link href="http://fonts.cdnfonts.com/css/cocogoose?styles=44178" rel="stylesheet">
+  <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet"> 
+        <title>Running is Passion</title>
 </head>
-<body style="height: 2000px;">
-  <header><nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a href="./index.html" class="navbar-brand" href="#">Running is pasion</a> 
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#cap">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="cap">
-        <ul class="nav navbar-nav">
-          <li>
-            <a class="nav-link active" href="./about.html">About</a>
-          </li>
-          <li>
-            <a class="nav-link " href="#modalities">Modalities</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#races">Next Races</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#records">Records</a>
-          </li>
-        </ul>
+<body >
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- <a href="./index.html" class="navbar-brand" href="#">Running is pasion</a> -->
+        <button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#cap" aria-controls="cap" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
+        <!-- <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#cap">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button type="button" class="btn-close" aria-label="Close">
+        </button> -->
+        <!-- <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarToggleExternalContent5"
+          aria-controls="navbarToggleExternalContent5" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-hamburger"></i>
+        </button> -->
+        <div class="collapse navbar-collapse" id="cap">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav-link active" href="./about.html">About</a>
+            </li>
+            <li>
+              <a class="nav-link " href="#modalities">Modalities</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#races">Next Races</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#records">Records</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div> 
-  </nav>
-</header>
+    </nav>
+  </header>
 <main>
-  <article class="whiteArticle container ">
-    <section class="hightSection">
+  <article class="whiteArticle ">
+    <section class="highSection">
       <h2 class="h2">"Hello Runners"</h2>
-      <h1 class="h1Title">ALL ABOUT RUNNING</h1></section>
+      <h1 class="h1Title">ALL ABOUT RUNNING </h1>
+    </section>
     <section class="mediumSection"><p>Running can give you a better health, make you more productive in all personal activities, improved concentration and improve the competitive spirit.</p></section>
   <section class="lowSection">
     <h3>Pride Run Phoenix</h3>
     <p>2022.03.19 Phoenix, United States of America</p>
   </section>   
   </article>
-  <article class="blackArticle ">
-    <h4>Next Races</h4>
-    <div class="iconDivider"></div>
+  <article class="blackArticle">
+    <div>
+      <h4>Next Races</h4>
+      <div class="iconDivider"></div>
+    </div>
        <section class="race1">
       <div><img src="./images/run 2.jpg" alt=""> </div>
          <p class="raceTitle">Royal Parks Half Marathon </p>
@@ -82,12 +104,14 @@
     </div>
   </article>
   <article class="athletesArticle">
-    <h5 class="outAthletes">Outstanding athletes</h5>
-    <div class="iconDivider"></div>
+    <div class="athletesHead" >
+      <h5 class="outAthletes">Outstanding athletes</h5>
+      <div class="iconDivider"></div>
+    </div>
     <div class="athletes"></div>
 <button class="moreAthletes">MORE <img src="./images/down.jpg" alt="downArrow"></button>
   </article>
-</main>
+ </main>
 <script src="./js/scriptCode.js"></script>
 </body>
 </html>

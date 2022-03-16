@@ -54,6 +54,12 @@ athletes.push({
  */
  var divAthletes=document.querySelector(".athletes");
  var buttonMore=document.querySelector(".moreAthletes");
+
+  document.querySelector('.first-button').addEventListener('click', function () {
+  
+  document.querySelector('.animated-icon1').classList.toggle('open');
+  });
+  
  /**
  * Functions
  */
@@ -64,8 +70,9 @@ function loadTopAthletes(quantity) {
   for (let index = 0; index < outstandingAthletes.length; index++) {
     const athlete = outstandingAthletes[index];
     var athleteSection=`<section>
-    <div class="person" ><img src='${athlete.photo}' alt='${athlete.name}'><div class="athleteSection">
-    <h5>${athlete.name}</h5><p class="profile">${athlete.profile}</p><div class="iconLeft" alt="left Line"></div>
+    <div class="person" ><div class="groupImage" ><img class="backImage" src='${athlete.photo}' alt='${athlete.name}'></div>
+    <div class="athleteSection">
+    <h6>${athlete.name}</h6><p class="profile">${athlete.profile}</p><div class="iconLeft" alt="left Line"></div>
     <p class="records">${athlete.records}</p></div></section>`;
     athleteSections= athleteSections.concat(athleteSection);
   }
