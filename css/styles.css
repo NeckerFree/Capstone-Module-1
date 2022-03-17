@@ -9,12 +9,16 @@
   --cap-gray-color: #d3d3d3;
   --cap-gray-bk-color:#f0f0f0;
   --cap-gray-dark-color: #797979;
+  --cap-gray-very-dark-color:#414246;
   --cap-lato-family: 'Lato', sans-serif;
   --cap-cocogoose-family: 'COCOGOOSE', sans-serif;
   --blur: 10px;
    
 } 
 /* General use*/
+a {
+  text-decoration: none;
+}
 
 .iconDivider {
   width: 50px;
@@ -32,6 +36,10 @@
   margin-left: 20px;
 }
 /* Mobile version */
+
+.topBar{
+  display: none;
+}
 body {
   margin: 0 auto;
   font-family: var(--cap-cocogoose-family);
@@ -47,24 +55,32 @@ h1,.h1{
   font-style: normal; /*normal, italic, oblique, initial*/
   font-size: 40px;
   line-height: 52px;
-  padding: 0 30px;
+ 
 }
 
 h2,.h2{
   color:var(--cap-red-orange-color); 
    font-family: var(--cap-lato-family); 
-   padding: 0 30px;
+ 
 }
+
+
  h3,.h3{
   color:var(--bs-gray);
   font-family: var(--cap-cocogoose-family); 
+  text-align: left;
+  
 }
 h4,.h4{
   color:white;
   margin: 0 auto;
   font-family: var(--cap-cocogoose-family); 
 }
-
+.racesTitle{
+  color:white;
+  margin: 0 auto;
+  font-family: var(--cap-cocogoose-family); 
+}
 h5,.h5{
   color:black;
   margin: 0 auto;
@@ -75,12 +91,14 @@ h6,.h6{
   font-family: var(--cap-cocogoose-family); 
 }
 
+.lowSection{
+  margin: 10px 30px;
+}
 
-
-.lowSection p{
+.lowText{
   color: var(--cap-gray-dark-color);
-  padding: 0;
   font-family: var(--cap-lato-family); 
+  padding: 0px 0px;
 }
 
 .whiteArticle{
@@ -93,18 +111,29 @@ h6,.h6{
 }
   .highSection{
      height: 300px;
+     text-align: left;
+     padding: 0 30px;
   }
+
+
   .mediumSection{
     border: 2px solid white;
     background-color: var(--cap-gray-bk-color);
+    margin: 0 30px;
   }
-  .blackArticle{
-      display: flex;
+  #racesArticle{
+    display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 30px;
     background-image: url(/images/pattern_bg.png);
     background-repeat: repeat;
     background-color: rgb(39, 42, 50);
+  }
+  .blackArticle{
+    display: flex;
+    flex-direction: column;
+
       
   }
   .blackArticle div{
@@ -119,37 +148,31 @@ h6,.h6{
   .race1{
     display: flex;
     flex-direction: row;
+    align-items: center;
     background: rgba(255, 255, 255, 0.1);
     margin: 15px;
   }
 
   .race1 div{
- padding:  50px 10px;
+ padding:  0px 20px;
   }
 
-  .race1 div img{
-    
-    height: auto;
-    width: 100px;
-    mix-blend-mode: multiply;
-    flex: 1;
-    }
-    .raceTitle{
+       .raceTitle{
       color: var(--cap-red-orange-color);
       font-family: var(--cap-cocogoose-family);
       font-weight: 400 ;
       font-style: normal; 
   font-size:12px;
   line-height: 20px;
-  flex: 0 0 100px;
+  flex: 0 0 120px;
     }
     .raceDescription{
       color: var(--bs-white);
-      font-weight: 400 ;
+      font-weight: 200 ;
       font-style: normal; 
   font-size:12px;
-  line-height: 18px;
-  flex: 1;
+  line-height: 12px;
+  
     }
     .footerAdd{
       padding: 10px;
@@ -163,7 +186,7 @@ h6,.h6{
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding-top: 30px;
+       padding-top: 30px;
       padding-bottom: 30px;
     }
      .athletesHead{
@@ -322,9 +345,175 @@ button:focus:not(:focus-visible) {
   border: 0;
 }
 
+/* About page*/
 
+
+main{
+  text-align: center; 
+}
+.highSectionAbout{
+  height: 300px;
+ }
+.aboutParagraph{
+  text-align: center;
+}
+a {
+  color: black;
+}
+.articleLogo{
+  border-bottom:  1px solid w var(--cap-gray-color);
+}
+.contactInfo{
+  text-align: center;
+  height: 70px;
+ }
+ .sectionLogo{
+   margin: 20px 20px;
+   border: 1px solid var(--cap-gray-color);
+ }
+.articleSeePast{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+ .sectionImages
+ {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center ;
+  
+ }
+ .sectionImages img{
+width: 500px;
+padding: 30px 0;
+ }
+ .articlePartner{
+   background-color: var(--cap-gray-very-dark-color);
+   display: flex;
+   flex-direction: column;
+   height: 300px;
+   justify-content: space-around;
+   
+ }
+
+ .row3, .row2{
+   display: flex;
+   justify-content: space-around;
+   
+ }
+ .row3 img, .row2 img{
+   width: 70px;
+   height: auto;
+   /* mix-blend-mode: multiply; */
+ }
+ .articleRights{
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+ }
+ .articleRights img{
+   width: 80px;
+   height: auto;
+ }
+ 
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
+  }
+  .topBar{
+    display: block;
+    background-color: var(--cap-gray-very-dark-color);
+    
+  }
+  .menu{
+    display: flex;
+    list-style: none;
+    align-items:center;
+    justify-content:flex-end;
+    height: 30px;
+    padding-right: 150px;
+  }
+  .menu li{
+    padding-left: 15px;
+    
+  }
+  .menu li a{
+    color:white;
+    margin: 0 auto;
+    font-family: var(--cap-lato-family); 
+  }
+  .highSection{
+    margin: 0 80px;
+  }
+  .mediumSection{
+    width: 62%;
+    margin: 0 80px;
+  }
+  .lowSection{
+    margin: 0 80px;
+  }
+  .navbar-brand{
+    margin: 0 80px;
+  }
+  
+  .blackArticle{
+    display: flex;
+  flex-direction: row;
+  }
+  .race1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .raceTitle{
+    font-weight: 400 ;
+    font-style: normal; 
+font-size:10px;
+line-height: 12px;
+flex: 1;
+  }
+  .raceDescription{
+    font-weight: 400 ;
+    font-style: normal; 
+font-size:10px;
+line-height: 12px;
+text-align: center;
+  }
+  .footerAdd p{
+    background-color:  transparent;
+    color: white;
+    
+  }
+  .footerAdd a{
+  
+      text-decoration:#272a31;
+   
+  }
+  .athletes{
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+    height: 100%;
+  }
+  .person{
+    padding: 0px 0px;
+    width: 500px; 
+  }
+  .person img{
+    width: 150px;
+    height: auto;
+    padding-left: 13px;
+    padding-top: 13px;
+  }
+  .groupImage{
+    background-image:url(../images/ajedrez.jpg);
+    filter: grayscale(100%);
+   background-size: cover;
+  background-blend-mode:hue;
   }
 }
