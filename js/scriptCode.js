@@ -53,10 +53,8 @@ athletes.push({
  */
 const divAthletes = document.querySelector('.athletes');
 const buttonMore = document.querySelector('.moreAthletes');
-
-document.querySelector('.first-button').addEventListener('click', () => {
-  document.querySelector('.animated-icon1').classList.toggle('open');
-});
+const menuButton = document.querySelector('.first-button');
+const animatedIcon = document.querySelector('.animated-icon1');
 
 /**
  * Functions
@@ -84,4 +82,7 @@ window.addEventListener('load', () => {
 });
 buttonMore.addEventListener('click', () => {
   loadTopAthletes(6);
+});
+menuButton.addEventListener('click', () => {
+  animatedIcon.classList.toggle('open');
 });
