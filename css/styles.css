@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
 @import url('https://fonts.googleapis.com/css2?family=Lato');
 
 /* CSS Variables */
@@ -573,6 +573,7 @@ main {
   }
 
   .contactInfo a {
+    text-decoration: none;
     text-decoration: underline;
     font-weight: bold;
   }

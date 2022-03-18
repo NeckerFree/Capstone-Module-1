@@ -72,7 +72,9 @@ function loadTopAthletes(quantity) {
     <p class="records">${athlete.records}</p></div></section>`;
     athleteSections = athleteSections.concat(athleteSection);
   }
-  divAthletes.innerHTML = athleteSections;
+  if (document.body.contains(divAthletes)) {
+    divAthletes.innerHTML = athleteSections;
+  }
 }
 /**
  * Events
@@ -80,9 +82,13 @@ function loadTopAthletes(quantity) {
 window.addEventListener('load', () => {
   loadTopAthletes(2);
 });
-buttonMore.addEventListener('click', () => {
-  loadTopAthletes(6);
-});
+if (document.body.contains(buttonMore)) {
+  buttonMore.addEventListener('click', () => {
+    loadTopAthletes(6);
+    buttonMore.style.disabled = true;
+  });
+}
+
 menuButton.addEventListener('click', () => {
   animatedIcon.classList.toggle('open');
 });
