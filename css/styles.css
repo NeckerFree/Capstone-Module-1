@@ -1,0 +1,796 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+/* CSS Variables */
+
+* {
+  --cap-dark-color: #272a31;
+  --cap-orange-color: #ec5242;
+  --cap-red-orange-color: #f84124;
+  --cap-gray-color: #d3d3d3;
+  --cap-gray-bk-color: #f0f0f0;
+  --cap-gray-dark-color: #797979;
+  --cap-gray-very-dark-color: #414246;
+  --cap-dark-rights-color: #2e2e2e;
+  --cap-lato-family: 'Lato', sans-serif;
+  --cap-cocogoose-family: 'COCOGOOSE', sans-serif;
+  --cap-left-margin: 120px;
+  --cap-left-padding: 120px;
+  --blur: 10px;
+}
+
+/* General use */
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.iconDivider {
+  width: 50px;
+  height: 2px;
+  background-color: var(--cap-orange-color);
+  margin-bottom: 0;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconLeft {
+  width: 35px;
+  height: 2px;
+  background-color: var(--cap-gray-color);
+  margin-left: 20px;
+}
+
+/* Mobile version */
+
+.topBar {
+  display: none;
+}
+
+body {
+  margin: 0 auto;
+  font-family: var(--cap-cocogoose-family);
+}
+
+.headerContainer {
+  background-image: url(../images/backgroundComplete.png);
+  height: 120px;
+  background-position: 25% 10%;
+  border-color: transparent;
+}
+
+.headerContainerAbout {
+  background-image: url(../images/backgroundComplete.png);
+  height: 120px;
+  background-position: -5% 50%;
+  border-color: transparent;
+}
+
+#cap {
+  background-color: white;
+}
+
+.h1Title {
+  background-image: url(../images/background.jpg);
+  color: transparent;
+  font-weight: 800;
+  font-family: var(--cap-cocogoose-family);
+  font-style: normal;
+  font-size: 50px;
+  line-height: 52px;
+  -webkit-background-clip: text;
+}
+
+h2,
+.h2 {
+  color: var(--cap-red-orange-color);
+  font-family: var(--cap-lato-family);
+}
+
+h3,
+.h3 {
+  color: var(--bs-gray);
+  font-family: var(--cap-cocogoose-family);
+  text-align: left;
+}
+
+h4,
+.h4 {
+  color: white;
+  margin: 0 auto;
+  font-family: var(--cap-cocogoose-family);
+}
+
+.headerPartner {
+  color: white;
+  font-weight: 10;
+  font-family: var(--cap-cocogoose-family);
+  font-style: normal;
+  font-size: 30px;
+  padding-top: 40px;
+}
+
+.racesTitle {
+  color: white;
+  margin: 0 auto;
+  font-weight: 500;
+  font-family: var(--cap-lato-family);
+  font-style: normal;
+  font-size: 30px;
+  line-height: 52px;
+}
+
+h5,
+.h5 {
+  color: black;
+  margin: 0 auto;
+}
+
+h6,
+.h6 {
+  color: black;
+  padding-left: 20px;
+  font-family: var(--cap-cocogoose-family);
+}
+
+.lowSection {
+  margin: 10px 30px;
+}
+
+.lowText {
+  color: var(--cap-gray-dark-color);
+  font-family: var(--cap-lato-family);
+  padding: 0 0;
+}
+
+.whiteArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(../images/backgroundComplete.png) no-repeat;
+  background-position: 40% 45%;
+}
+
+.whiteArticleAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(../images/backgroundComplete.png) no-repeat;
+  background-position: 68% 60%;
+  align-items: center;
+}
+
+.highSection {
+  height: 300px;
+  text-align: left;
+  padding: 0 30px;
+}
+
+.mediumSection {
+  border: 2px solid white;
+  background-color: var(--cap-gray-bk-color);
+  margin: 0 30px;
+}
+
+.mediumSectionAbout {
+  border: 2px solid white;
+  background-color: white;
+  margin: 0 20px;
+}
+
+#racesArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  background-image: url(/images/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: rgb(39, 42, 50);
+}
+
+.blackArticle {
+  display: flex;
+  flex-direction: column;
+}
+
+.blackArticle div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.race1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 15px;
+}
+
+.race1 div {
+  padding: 0 20px;
+}
+
+.raceTitle {
+  color: var(--cap-red-orange-color);
+  font-family: var(--cap-lato-family);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  flex: 0 0 120px;
+}
+
+.raceDescription {
+  color: var(--bs-white);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  font-family: var(--cap-lato-family);
+  line-height: 18px;
+}
+
+.footerAdd {
+  margin: 0 40px;
+}
+
+p {
+  font-family: var(--cap-lato-family);
+  padding: 10px 20px;
+  text-align: justify;
+}
+
+.footerAdd p {
+  background-color: var(--cap-red-orange-color);
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+.athletesArticle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.athletesHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.athletes {
+  display: flex;
+  flex-direction: column;
+}
+
+.athleteSection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.profile {
+  color: var(--cap-orange-color);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: var(--cap-lato-family);
+}
+
+.records {
+  color: black;
+  font-family: var(--cap-lato-family);
+  font-style: italic;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.outAthletes {
+  color: black;
+  font-weight: 600;
+  font-family: var(--cap-lato-family);
+  font-style: normal; /* normal, italic, oblique, initial */
+  font-size: 30px;
+  line-height: 52px;
+}
+
+.person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.groupImage {
+  background: url(../images/ajedrez.jpg) left top no-repeat;
+  background-size: 75px 75px;
+}
+
+.person img {
+  width: 150px;
+  height: auto;
+  padding-left: 13px;
+  padding-top: 13px;
+}
+
+.moreAthletes {
+  background-color: white;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.moreAthletes img {
+  height: 10px;
+}
+
+/* Menu Style */
+.animated-icon1 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon1 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  background: black;
+}
+
+.animated-icon1 span:nth-child(1) {
+  top: 0;
+}
+
+.animated-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: transparent;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:default,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+  border: 0;
+}
+
+/* About page */
+
+main {
+  text-align: center;
+}
+
+.highSectionAbout {
+  height: 200px;
+}
+
+.aboutParagraph {
+  text-align: center;
+}
+
+.articleLogo {
+  border-bottom: 1px solid var(--cap-gray-color);
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 10px 10px 0;
+}
+
+.logoTitle {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-family: var(--cap-lato-family);
+  padding-bottom: 20px;
+}
+
+.descriptionlogo {
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  font-family: var(--cap-lato-family);
+  padding-top: 30px;
+  color: black;
+}
+
+.contactInfo {
+  text-align: center;
+  height: 70px;
+}
+
+.contactInfo a {
+  text-decoration: underline;
+}
+
+.sectionLogo img {
+  margin: 100px 20px;
+  border: 1px solid var(--cap-gray-color);
+  padding: 20px 70px;
+  width: 400px;
+}
+
+.articleSeePast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sectionImages {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sectionImages img {
+  width: 80%;
+  padding: 10px 0;
+}
+
+.articlePartnerH {
+  display: block;
+}
+
+.articleRightsI,
+.articlePartnerI {
+  display: none;
+}
+
+.articlePartner {
+  background-color: var(--cap-gray-very-dark-color);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-around;
+}
+
+.row3,
+.row2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row3 img,
+.row2 img {
+  width: 150px;
+  height: auto;
+
+  /* mix-blend-mode: multiply; */
+}
+
+.articleRights {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.imageLogo {
+  width: 150px;
+  height: auto;
+  content: url(../icons/logo3.png);
+}
+
+.h1TitleRed {
+  color: var(--cap-red-orange-color);
+  font-weight: 800;
+  font-family: var(--cap-cocogoose-family);
+  font-style: normal;
+  font-size: 50px;
+  line-height: 52px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .topBar {
+    display: block;
+    background-color: var(--cap-gray-very-dark-color);
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    height: 30px;
+    padding-right: 150px;
+  }
+
+  .menu li {
+    padding-left: 15px;
+  }
+
+  .footerAdd a {
+    text-decoration: #272a31;
+  }
+
+  .contactInfo a {
+    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .menu li a {
+    color: white;
+    margin: 0 auto;
+    font-family: var(--cap-lato-family);
+  }
+
+  .highSection {
+    text-align: left;
+    padding-left: var(--cap-left-padding);
+    padding-top: 100px;
+    height: 300px;
+  }
+
+  .mediumSection,
+  .mediumSectionAbout {
+    width: 62%;
+    margin-left: var(--cap-left-margin);
+  }
+
+  .lowSection {
+    padding-left: var(--cap-left-padding);
+    padding-top: 40px;
+    margin-left: 0;
+  }
+
+  .navbar-brand {
+    display: block;
+  }
+
+  .blackArticle {
+    display: flex;
+    flex-direction: row;
+    padding: 0 200px;
+    padding-top: 30px;
+  }
+
+  .race1 {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .raceTitle {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 12px;
+    flex: 1;
+    font-family: var(--cap-lato-family);
+  }
+
+  .raceDescription {
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    font-family: var(--cap-lato-family);
+  }
+
+  .footerAdd p {
+    background-color: transparent;
+    color: white;
+  }
+
+  .athletes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .person {
+    padding: 0 0;
+    width: 700px;
+  }
+
+  .person img {
+    width: 230px;
+    height: auto;
+    padding-left: 13px;
+    padding-top: 13px;
+  }
+
+  .groupImage {
+    background-image: url(../images/ajedrez\ gray.jpg);
+    background-size: 115px auto;
+  }
+
+  .sectionImages {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sectionImages img {
+    width: 30%;
+    margin-right: 30px;
+  }
+
+  .whiteArticleAbout {
+    padding-left: var(--cap-left-padding);
+  }
+
+  .articleLogo {
+    padding-left: var(--cap-left-padding);
+  }
+
+  .articleSeePast {
+    padding-bottom: 60px;
+    padding-left: var(--cap-left-padding);
+  }
+
+  .articlePartnerH {
+    display: none;
+  }
+
+  .articleRightsI,
+  .articlePartnerI {
+    display: block;
+  }
+
+  .articleDisplay {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+  }
+
+  .articleRights {
+    background-color: var(--cap-dark-rights-color);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageLogo {
+    content: url(../icons/logo2.png);
+    width: 250px;
+  }
+
+  .imageLogoI {
+    width: 150px;
+    height: auto;
+    content: url(../icons/logo3.png);
+  }
+
+  .descriptionlogo {
+    text-align: center;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 10px;
+    font-family: var(--cap-lato-family);
+    padding-top: 30px;
+    color: white;
+  }
+
+  .descriptionlogoI {
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    font-family: var(--cap-lato-family);
+    padding-top: 30px;
+    color: black;
+  }
+
+  .headerContainer {
+    height: 100px;
+    background-image: none;
+    background-color: transparent !important;
+  }
+
+  .headerContainerAbout {
+    height: 100px;
+    background-image: none;
+    background-color: transparent !important;
+  }
+
+  #cap ul li {
+    padding-left: 60px;
+    font-family: var(--cap-lato-family);
+  }
+
+  .navbar-collapse {
+    justify-content: space-between;
+  }
+
+  .container {
+    margin-left: 0;
+    padding-left: var(--cap-left-padding);
+  }
+
+  .borderOrange {
+    border: 3px solid var(--cap-orange-color);
+    vertical-align: middle;
+    font-weight: bold;
+  }
+}
