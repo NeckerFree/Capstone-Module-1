@@ -15,6 +15,7 @@
   --cap-lato-family: 'Lato', sans-serif;
   --cap-cocogoose-family: 'COCOGOOSE', sans-serif;
   --cap-left-margin: 120px;
+  --cap-left-padding: 120px;
   --blur: 10px;
 }
 
@@ -77,7 +78,6 @@ body {
 #cap {
   background-color: white;
 }
-
 
 .h1Title {
   background-image: url(../images/background.jpg);
@@ -408,7 +408,7 @@ p {
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0,0,0,.55);
+  color: rgba(0, 0, 0, 0.55);
   border-color: transparent;
 }
 
@@ -420,8 +420,6 @@ p {
   outline: none;
   box-shadow: none;
   border: none;
-  
-  
 }
 
 button:focus:not(:focus-visible) {
@@ -509,9 +507,10 @@ main {
 .articlePartnerH {
   display: block;
 }
-.articleRightsI, .articlePartnerI {
+
+.articleRightsI,
+.articlePartnerI {
   display: none;
-  
 }
 
 .articlePartner {
@@ -600,17 +599,22 @@ main {
   }
 
   .highSection {
-    margin: 0 80px;
+    text-align: left;
+    padding-left: var(--cap-left-padding);
+    padding-top: 100px;
+    height: 300px;
   }
 
   .mediumSection,
   .mediumSectionAbout {
     width: 62%;
-    margin: 0 80px;
+    margin-left: var(--cap-left-margin);
   }
 
   .lowSection {
-    margin: 0 80px;
+    padding-left: var(--cap-left-padding);
+    padding-top: 40px;
+    margin-left: 0;
   }
 
   .navbar-brand {
@@ -621,6 +625,7 @@ main {
     display: flex;
     flex-direction: row;
     padding: 0 200px;
+    padding-top: 30px;
   }
 
   .race1 {
@@ -632,7 +637,7 @@ main {
   .raceTitle {
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 12px;
     flex: 1;
     font-family: var(--cap-lato-family);
@@ -641,7 +646,7 @@ main {
   .raceDescription {
     font-weight: 100;
     font-style: normal;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 17px;
     text-align: center;
     font-family: var(--cap-lato-family);
@@ -666,7 +671,7 @@ main {
   }
 
   .person img {
-    width: 150px;
+    width: 230px;
     height: auto;
     padding-left: 13px;
     padding-top: 13px;
@@ -674,6 +679,7 @@ main {
 
   .groupImage {
     background-image: url(../images/ajedrez\ gray.jpg);
+    background-size: 115px auto;
   }
 
   .sectionImages {
@@ -691,31 +697,34 @@ main {
   }
 
   .whiteArticleAbout {
-    margin-left: var(--cap-left-margin);
+    padding-left: var(--cap-left-padding);
   }
 
   .articleLogo {
-    margin-left: var(--cap-left-margin);
+    padding-left: var(--cap-left-padding);
   }
 
   .articleSeePast {
     padding-bottom: 60px;
-    margin-left: var(--cap-left-margin);
+    padding-left: var(--cap-left-padding);
   }
 
   .articlePartnerH {
     display: none;
   }
-  .articleRightsI, .articlePartnerI {
+
+  .articleRightsI,
+  .articlePartnerI {
     display: block;
   }
 
-  .articleDisplay{
+  .articleDisplay {
     display: flex;
     justify-content: space-around;
     height: 200px;
     align-items: center;
   }
+
   .articleRights {
     background-color: var(--cap-dark-rights-color);
     justify-content: center;
@@ -732,6 +741,7 @@ main {
     height: auto;
     content: url(../icons/logo3.png);
   }
+
   .descriptionlogo {
     text-align: center;
     font-weight: 200;
@@ -741,6 +751,7 @@ main {
     padding-top: 30px;
     color: white;
   }
+
   .descriptionlogoI {
     text-align: left;
     font-weight: 400;
@@ -750,26 +761,36 @@ main {
     padding-top: 30px;
     color: black;
   }
+
   .headerContainer {
     height: 100px;
     background-image: none;
-    background-color: transparent !important; 
+    background-color: transparent !important;
   }
-   
-  #cap ul li{
+
+  .headerContainerAbout {
+    height: 100px;
+    background-image: none;
+    background-color: transparent !important;
+  }
+
+  #cap ul li {
     padding-left: 80px;
     font-family: var(--cap-lato-family);
   }
+
   .navbar-collapse {
-        justify-content: space-between;
-        margin-left: 0;
+    justify-content: space-between;
+  }
+
+  .container {
+    margin-left: 0;
+    padding-left: var(--cap-left-padding);
+  }
+
+  .borderOrange {
+    border: 3px solid var(--cap-orange-color);
+    vertical-align: middle;
+    font-weight: bold;
+  }
 }
-.container{
-  margin-left: var(--cap-left-margin);
-}
-.borderOrange{
-  border: 3px solid var(--cap-orange-color);
-  vertical-align: middle;
- font-weight: bold;
-}
-} 

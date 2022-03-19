@@ -85,7 +85,7 @@ window.addEventListener('load', () => {
 if (document.body.contains(buttonMore)) {
   buttonMore.addEventListener('click', () => {
     loadTopAthletes(6);
-    buttonMore.style.disabled = true;
+    buttonMore.style.display = 'none';
   });
 }
 
