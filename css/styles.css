@@ -20,7 +20,7 @@
 
 /* General use */
 .logo {
-  width: 85px;
+  width: 120px;
   height: auto;
 }
 
@@ -64,17 +64,20 @@ body {
   background-image: url(../images/backgroundComplete.png);
   height: 120px;
   background-position: 25% 10%;
+  border-color: transparent;
 }
 
 .headerContainerAbout {
   background-image: url(../images/backgroundComplete.png);
   height: 120px;
   background-position: -5% 50%;
+  border-color: transparent;
 }
 
 #cap {
   background-color: white;
 }
+
 
 .h1Title {
   background-image: url(../images/background.jpg);
@@ -355,7 +358,7 @@ p {
 .animated-icon1 span {
   display: block;
   position: absolute;
-  height: 3px;
+  height: 4px;
   width: 100%;
   border-radius: 9px;
   opacity: 1;
@@ -404,6 +407,12 @@ p {
   transform: rotate(-135deg);
 }
 
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.55);
+  border-color: transparent;
+}
+
+.navbar-toggler:hover,
 .navbar-toggler:focus,
 .navbar-toggler:default,
 .navbar-toggler:active,
@@ -411,6 +420,8 @@ p {
   outline: none;
   box-shadow: none;
   border: none;
+  
+  
 }
 
 button:focus:not(:focus-visible) {
@@ -497,6 +508,10 @@ main {
 
 .articlePartnerH {
   display: block;
+}
+.articleRightsI, .articlePartnerI {
+  display: none;
+  
 }
 
 .articlePartner {
@@ -599,7 +614,6 @@ main {
   }
 
   .navbar-brand {
-    margin: 0 80px;
     display: block;
   }
 
@@ -692,7 +706,16 @@ main {
   .articlePartnerH {
     display: none;
   }
+  .articleRightsI, .articlePartnerI {
+    display: block;
+  }
 
+  .articleDisplay{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+  }
   .articleRights {
     background-color: var(--cap-dark-rights-color);
     justify-content: center;
@@ -704,6 +727,11 @@ main {
     width: 250px;
   }
 
+  .imageLogoI {
+    width: 150px;
+    height: auto;
+    content: url(../icons/logo3.png);
+  }
   .descriptionlogo {
     text-align: center;
     font-weight: 200;
@@ -713,10 +741,35 @@ main {
     padding-top: 30px;
     color: white;
   }
-
+  .descriptionlogoI {
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    font-family: var(--cap-lato-family);
+    padding-top: 30px;
+    color: black;
+  }
   .headerContainer {
     height: 100px;
-    background-color: #fff;
     background-image: none;
+    background-color: transparent !important; 
   }
+   
+  #cap ul li{
+    padding-left: 80px;
+    font-family: var(--cap-lato-family);
+  }
+  .navbar-collapse {
+        justify-content: space-between;
+        margin-left: 0;
 }
+.container{
+  margin-left: var(--cap-left-margin);
+}
+.borderOrange{
+  border: 3px solid var(--cap-orange-color);
+  vertical-align: middle;
+ font-weight: bold;
+}
+} 
